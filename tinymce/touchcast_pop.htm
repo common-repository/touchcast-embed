@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<head>
+<title>Insert Touchast ShortCode</title>
+<script type="text/javascript"
+	src="../../../../wp-includes/js/tinymce/tiny_mce_popup.js"></script>
+<script type="text/javascript" src="touchcast_pop.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+html, body, td, th, input, select {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+}
+-->
+</style>
+</head>
+<body>
+<form onsubmit="touchcastPop.insert();return false;" action="#">
+  <table width="100%">
+    <tr>
+      <td height="38" colspan="3"><h2>Insert Touchcast ShortCode</h2></td>
+    </tr>
+    <tr>
+      <td height="30">Touchcast URL</td>
+      <td height="30" colspan="2"><input id="touchcast_url" name="touchcast_url"
+			type="text" class="text" style="width: 95%" value="" /></td>
+    </tr>
+    <tr>
+      <td width="101" height="30">Auto Play</td>
+      <td height="30" colspan="2"><select name="touchcast_autoplay"
+			class="selectfont">
+          <option value="1">On</option>
+          <option value="0">Off</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td width="101" height="30">Auto Forward</td>
+      <td height="30" colspan="2"><select name="touchcast_autoforward"
+			class="selectfont">
+          <option value="1">On</option>
+          <option value="0">Off</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td height="30">Dimensions</td>
+      <td height="30" colspan="2"><select name="touchcast_dimension">
+          <option value="480x270">480 x 270</option>
+          <option value="560x315">560x315</option>
+          <option value="640x360">640x360</option>
+          <option value="1280x720">1280x720</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td height="30"><input type="button" id="insert" name="insert"
+			value="{#insert}" onClick="touchcastPop.insert();" /></td>
+      <td width="92" height="30">&nbsp;</td>
+      <td width="876" height="30"><input type="button" id="cancel"
+			name="cancel" value="{#cancel}" onClick="tinyMCEPopup.close();" /></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
